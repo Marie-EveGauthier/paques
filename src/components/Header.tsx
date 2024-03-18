@@ -5,7 +5,7 @@ const Wrapper = styled.header`
   font-family: Caslon;
   font-size: var(--space-xl);
   color: var(--color-green);
-  margin-top: 3rem;
+  padding-top: 3rem;
   text-align: center;
 `;
 const Title = styled.h1``;

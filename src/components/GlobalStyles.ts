@@ -95,7 +95,6 @@ const GlobalStyles = createGlobalStyle`
 
   @font-face {
     font-family: 'Franklin';
-    font-weight: normal;
     font-style: normal;
     font-display: swap;
     src: url(${FranklinRegular});
@@ -126,11 +125,13 @@ const GlobalStyles = createGlobalStyle`
     --color-gray-900: hsl(210deg, 25%, 88%);
     --color-gray-1000: hsl(210deg, 25%, 96%);
     --color-white: hsl(0deg, 0%, 100%);
+    --color-beige: #e9dfd1;
   /** https://www.happyhues.co/palettes/5*/
     --color-green-light: #f2f7f5;
     --color-green: #475d5b;
     --color-green-dark: #00473e;
-    --color-pink: #ffa8ba;
+    --color-pink-dark: #d8779a;
+    --color-pink-light: #ffa8ba;
     --color-red: #fa5246;
     --color-yellow: #fa5246;
 
@@ -139,6 +140,8 @@ const GlobalStyles = createGlobalStyle`
     --space-l: 1.5rem;
     --space-xl: 2rem;
   }
+
+
 `;
 
 export default GlobalStyles;

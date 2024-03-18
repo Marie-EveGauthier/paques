@@ -9,6 +9,7 @@ const ratio = 66; // 2 / 3
 
 const Wrapper = styled.div`
   margin-top: 24px;
+  margin-bottom: 24px;
   margin-left: 224px;
   display: flex;
   align-items: center;
@@ -24,13 +25,13 @@ const EasterCard = styled.div`
   transition: all.5s;
 
   &:hover {
-    transform: perspective(2000px) rotate(2deg);
+    transform: perspective(2000px) rotate(1 deg);
   }
 `;
 
 const CardFront = styled.div`
   position: relative;
-  background-color: #e9dfd1;
+  background-color: var(--color-beige);
   width: 200px;
   height: 200px;
   transform-origin: left;
@@ -40,13 +41,34 @@ const CardFront = styled.div`
 
   ${EasterCard}:hover & {
     transform: rotateY(-160deg);
-    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+    box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.3),
+      inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
   }
+`;
+
+const InsideText = styled.p`
+  display: none;
+
+  ${EasterCard}:hover & {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: rotateY(160deg);
+  }
+`;
+
+const Name = styled.p`
+  color: var(--color-green);
+  font-size: 2rem;
+  font-weight: 700;
 `;
 
 const Bottom = styled.div`
   position: absolute;
   color: var(--color-white);
+  font-weight: 600;
   background-color: var(--color-red);
   width: 200px;
   height: 60px;
@@ -181,22 +203,32 @@ const Paws = styled.div`
 
 const CardInside = styled.div`
   position: absolute;
-  background-color: var(--color-green-light);
+  background-color: var(--color-beige);
   width: 200px;
   height: 200px;
   z-index: -2;
   left: 0;
   top: 0;
-  box-shadow: inset 30px 10px 100px rgba(0, 0, 0, 0.1),
-    0 0 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.3),
+    inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
 `;
 
-const Wishes = styled.div``;
-const EasterEggs = styled.div``;
-const Eggs = styled.div``;
-const Basket = styled.div``;
+const Wishes = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+`;
 
-const Card = ({ date }: { date: string }) => {
+const Event = styled.p`
+  color: var(--color-green);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+`;
+
+const Card = ({ date, content }: { date: string; content: any }) => {
+  console.log("content::", content);
   return (
     <Wrapper>
       <EasterCard>
@@ -208,13 +240,14 @@ const Card = ({ date }: { date: string }) => {
             <EarRight></EarRight>
             <Paws></Paws>
           </EasterBunny>
+          <InsideText>
+            <Name>{content.name}</Name>
+          </InsideText>
         </CardFront>
         <CardInside>
-          <Wishes></Wishes>
-          <EasterEggs>
-            <Eggs></Eggs>
-            <Basket></Basket>
-          </EasterEggs>
+          <Wishes>
+            <Event>{content.event}</Event>
+          </Wishes>
         </CardInside>
       </EasterCard>
     </Wrapper>
