@@ -8,7 +8,6 @@ const CardWrapper = styled.section`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
 `;
 
 export default function Index() {
