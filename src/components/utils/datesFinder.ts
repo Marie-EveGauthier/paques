@@ -4,7 +4,7 @@
  * Thanks for this gist for the Easter date calculation code: https://gist.github.com/johndyer/0dffbdd98c2046f41180c051f378f343
  * @returns {array} [int month, int day]
  */
-function getEaster(year) {
+function getEaster(year: number): [month: number, day: number] {
   var f = Math.floor,
     // Golden Number - 1
     G = year % 19,
@@ -26,33 +26,43 @@ function getEaster(year) {
 const now = new Date();
 const currentYear = now.getFullYear();
 
-const easter = getEaster(currentYear);
-// const dimancheDesRameaux = easter.clone().subtract(7, "days");
-// const lundiSaint = easter.clone().subtract(6, "days");
-// const mardiSaint = easter.clone().subtract(5, "days");
-// const mercrediSaint = easter.clone().subtract(4, "days");
-// const jeudiSaint = easter.clone().subtract(3, "days");
-// const vendrediSaint = easter.clone().subtract(2, "days");
-// const samediSaint = easter.clone().subtract(1, "day");
-// const paques = easter.clone();
+const [month, day] = getEaster(currentYear);
+
+const easterDate = new Date(currentYear, month - 1, day);
+
+const getDisplayedDates = (dayToSubscribe: number) => {
+  const date = new Date(easterDate);
+
+  const calculatedDate = date.setDate(date.getDate() - dayToSubscribe);
+  const formattedDate = new Date(calculatedDate).toLocaleString("fr-FR", {
+    day: "numeric",
+    month: "long",
+  });
+  return formattedDate;
+};
+
+const dimancheDesRameaux = getDisplayedDates(7);
+const lundiSaint = getDisplayedDates(6);
+const mardiSaint = getDisplayedDates(5);
+const mercrediSaint = getDisplayedDates(4);
+const jeudiSaint = getDisplayedDates(3);
+const vendrediSaint = getDisplayedDates(2);
+const samediSaint = getDisplayedDates(1);
+const paques = getDisplayedDates(0);
 
 export const getCurrentYear = (): number => {
   return currentYear;
 };
 
-// export const getHolyWeekForCurrentYear = () => {
-//   return [
-//     dimancheDesRameaux,
-//     lundiSaint,
-//     mardiSaint,
-//     mercrediSaint,
-//     jeudiSaint,
-//     vendrediSaint,
-//     samediSaint,
-//     paques,
-//   ];
-// };
-
-export const getPaques = () => {
-  return easter;
+export const getHollyWeekForCurrentYear = (): string[] => {
+  return [
+    dimancheDesRameaux,
+    lundiSaint,
+    mardiSaint,
+    mercrediSaint,
+    jeudiSaint,
+    vendrediSaint,
+    samediSaint,
+    paques,
+  ];
 };

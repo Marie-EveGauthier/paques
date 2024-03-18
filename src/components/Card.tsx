@@ -74,19 +74,12 @@ const EasterEggs = styled.div``;
 const Eggs = styled.div``;
 const Basket = styled.div``;
 
-const Card = ({ dateElements }: { dateElements: number[] }) => {
-  const day = dateElements[1];
-  const month = dateElements[0];
-  const monthText = new Date(`${month}`).toLocaleString("fr-FR", {
-    month: "long",
-  });
-  const displayDate = `${day} ${monthText}`;
-
+const Card = ({ date }: { date: string }) => {
   return (
     <Wrapper>
       <EasterCard>
         <CardFront>
-          <Bottom>{displayDate}</Bottom>
+          <Bottom>{date}</Bottom>
           <EasterBunny>
             <Head></Head>
             <EarLeft></EarLeft>

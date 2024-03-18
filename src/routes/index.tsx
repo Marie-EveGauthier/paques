@@ -1,22 +1,25 @@
+import styled from "styled-components";
+
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import Card from "../components/Card";
-import { getPaques } from "../components/utils/datesFinder";
+import { getHollyWeekForCurrentYear } from "../components/utils/datesFinder";
 
-// const cocos = [
-//   {
+const CardWrapper = styled.section`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+`;
 
-//     {
-//       date:
-//     }
-//   }
-// ]
-const paques = getPaques();
 export default function Index() {
+  const hollyWeek = getHollyWeekForCurrentYear();
   return (
     <MaxWidthWrapper>
-      {/* {dates.map((date) => ( */}
-      <Card dateElements={paques} />
-      {/* ))} */}
+      <CardWrapper>
+        {hollyWeek.map((date) => (
+          <Card date={date} key={date} />
+        ))}
+      </CardWrapper>
     </MaxWidthWrapper>
   );
 }
