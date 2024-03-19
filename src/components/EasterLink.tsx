@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(Link)<{ fontSize?: string }>`
   display: flex;
   gap: 4px;
   align-items: center;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: ${({ fontSize }) => (fontSize ? fontSize : "0.8rem")};
 
   color: var(--color-white);
   background-color: var(--color-yellow);
@@ -17,8 +17,12 @@ const StyledLink = styled(Link)`
   margin: 5px;
 `;
 
-const EasterLink = ({ to, children }) => {
-  return <StyledLink to={to}>{children}</StyledLink>;
+const EasterLink = ({ to, children, fontSize }) => {
+  return (
+    <StyledLink to={to} fontSize={fontSize}>
+      {children}
+    </StyledLink>
+  );
 };
 
 export default EasterLink;
