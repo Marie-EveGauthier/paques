@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { getCurrentYear } from "./utils/datesFinder";
+import { getCurrentYear } from "../utils/datesFinder";
 
 const Wrapper = styled.header`
   font-family: Caslon;

@@ -133,7 +133,7 @@ const GlobalStyles = createGlobalStyle`
     --color-pink-dark: #d8779a;
     --color-pink-light: #ffa8ba;
     --color-red: #fa5246;
-    --color-yellow: #fa5246;
+    --color-yellow: #faae2c;
 
     --space-s: 0.5rem;
     --space-m: 1rem;

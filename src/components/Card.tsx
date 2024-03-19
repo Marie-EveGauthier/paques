@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import { FaArrowRightLong } from "react-icons/fa6";
+
+import Egg from "./Egg";
+import EasterLink from "./EasterLink";
 
 /** source: https://lenadesign.org/2022/02/26/css-easter-bunny-foldable-easter-card/#google_vignette
  * but as we need a smaller card, we adopt the 2 / 3 smallThan
@@ -214,10 +218,12 @@ const CardInside = styled.div`
 `;
 
 const Wishes = styled.div`
+  height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  flex-direction: column;
 `;
 
 const Event = styled.p`
@@ -225,6 +231,18 @@ const Event = styled.p`
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
+`;
+
+const EggWrapper = styled.div`
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  right: 30px;
+  transform: rotate(5deg);
+
+  ${EasterCard}:hover & {
+    display: block;
+  }
 `;
 
 const Card = ({ date, content }: { date: string; content: any }) => {
@@ -247,8 +265,14 @@ const Card = ({ date, content }: { date: string; content: any }) => {
         <CardInside>
           <Wishes>
             <Event>{content.event}</Event>
+            <EasterLink to={`/cocos/${content.order}`}>
+              En savoir plus <FaArrowRightLong />
+            </EasterLink>
           </Wishes>
         </CardInside>
+        <EggWrapper>
+          <Egg />
+        </EggWrapper>
       </EasterCard>
     </Wrapper>
   );

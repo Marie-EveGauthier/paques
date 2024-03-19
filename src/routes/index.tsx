@@ -3,7 +3,7 @@ import styled from "styled-components";
 import dataJSON from "../data.json";
 
 import Card from "../components/Card";
-import { getHollyWeekForCurrentYear } from "../components/utils/datesFinder";
+import { getHollyWeekForCurrentYear } from "../utils/datesFinder";
 
 const CardWrapper = styled.section`
   display: flex;
