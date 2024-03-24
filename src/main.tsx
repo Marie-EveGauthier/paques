@@ -8,6 +8,7 @@ import { Layout } from "./routes/Layout";
 import Coco from "./routes/coco";
 import Index from "./routes";
 import GlobalStyles from "./components/GlobalStyles";
+import "react-photo-view/dist/react-photo-view.css";
 
 const router = createBrowserRouter([
   {

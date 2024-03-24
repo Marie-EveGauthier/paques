@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import { PhotoProvider, PhotoView } from "react-photo-view";
+
 import data from "../data.json";
 
 import EasterLink from "../components/EasterLink";
@@ -43,6 +45,7 @@ const Figure = styled.figure`
   text-align: right;
   font-size: 0.8rem;
   justify-content: space-evenly;
+  cursor: pointer;
 `;
 
 const ImageWrapper = styled.div`
@@ -120,24 +123,27 @@ const Coco = () => {
         <>
           <Title>{currentData.name}</Title>
           <Subtitle>{currentData.event}</Subtitle>
-          <ImagesWrapper $quantity={currentData.artwork.length}>
-            {currentData.artwork.map((art) => (
-              <Figure key={art.src}>
-                <ImageWrapper>
-                  <Image src={art.src} />
-                </ImageWrapper>
+          <PhotoProvider>
+            <ImagesWrapper $quantity={currentData.artwork.length}>
+              {currentData.artwork.map((art) => (
+                <PhotoView key={art.src} src={art.src}>
+                  <Figure>
+                    <ImageWrapper>
+                      <Image src={art.src} />
+                    </ImageWrapper>
 
-                <FigCaption>
-                  <p>
-                    {art.artist}, <em>{art.title}</em>, {art.date}
-                  </p>
-                  <p>{art.techniqueAndSize}</p>
-                  <p>{art.collection}</p>
-                </FigCaption>
-              </Figure>
-            ))}
-          </ImagesWrapper>
-
+                    <FigCaption>
+                      <p>
+                        {art.artist}, <em>{art.title}</em>, {art.date}
+                      </p>
+                      <p>{art.techniqueAndSize}</p>
+                      <p>{art.collection}</p>
+                    </FigCaption>
+                  </Figure>
+                </PhotoView>
+              ))}
+            </ImagesWrapper>
+          </PhotoProvider>
           {/* <BibleWrapper>
             {renderComponent(currentData.bibleComponent)}
           </BibleWrapper> */}
