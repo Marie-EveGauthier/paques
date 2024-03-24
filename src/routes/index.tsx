@@ -15,8 +15,6 @@ const CardWrapper = styled.section`
 export default function Index() {
   const hollyWeek = getHollyWeekForCurrentYear();
 
-  console.log(dataJSON);
-
   return (
     <CardWrapper>
       {hollyWeek.map((date, index) => {

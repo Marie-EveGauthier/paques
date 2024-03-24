@@ -3,17 +3,19 @@
     "order": 1,
     "name": "Dimanche des Rameaux",
     "event": "L'entrée de Jésus à Jérusalem",
-    "artwork": {
-      "title": "",
-      "artist": "",
-      "legend": "",
-      "href": "",
-      "licence": ""
-    },
-    "bible": {
-      "text": "",
-      "reference": ""
-    },
+    "artwork": [
+      {
+        "title": "Arrivée du Christ à Jéruslam",
+        "date": "1320",
+        "techniqueAndSize": "fresque",
+        "collection": "Basilique Saint-François, transept sud, Assise, Italie.",
+        "artist": "Pietro Lorenzetti (1280-1348)",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Assisi-frescoes-entry-into-jerusalem-pietro_lorenzetti.jpg",
+        "alt": "",
+        "licence": ""
+      }
+    ],
+    "bibleComponent": "Day1",
     "question": "",
     "answer": ""
   },
@@ -21,13 +23,52 @@
     "order": 2,
     "name": "Lundi Saint",
     "event": "Jésus chasse les marchands du Temple",
-    "artwork": {
-      "title": "",
-      "artist": "",
-      "legend": "",
-      "href": "",
-      "licence": ""
-    },
+    "artwork": [
+      {
+        "title": "Le Christ chassant les marchands du Temple",
+        "date": "vers 1570",
+        "techniqueAndSize": "huile sur panneau, 65,4 x 83,2 cm",
+        "collection": "Washington, National Galleryof Art; Samuel H. Kress Collection.",
+        "artist": "El Greco",
+        "legend": "",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Christ_Cleansing_the_Temple_by_El_Greco_-_Q63117265.jpg",
+        "alt": "",
+        "licence": ""
+      },
+      {
+        "title": "Le Christ chassant les marchands du Temple",
+        "date": "vers 1575",
+        "techniqueAndSize": "huile sur toile, 116,9 x 149,9 cm",
+        "collection": "Minneapolis, Minneapolis Institute of Art; The William Hood Dunwoody Fund",
+        "artist": "El Greco",
+        "legend": "",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/El_Greco_%28Domenikos_Theotokopoulos%29_-_Christ_Driving_the_Money_Changers_from_the_Temple_-_Google_Art_Project.jpg",
+        "alt": "",
+        "licence": ""
+      },
+      {
+        "title": "Le Christ chassant les marchands du Temple",
+        "date": "vers 1600",
+        "techniqueAndSize": "huile sur toile, 106 x 130 cm",
+        "collection": "Londres, The National Gallery; présenté par sir J. C. Robinson, 1895.",
+        "artist": "El Greco",
+        "legend": "",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/El_Greco_016.jpg",
+        "alt": "",
+        "licence": ""
+      },
+      {
+        "title": "Le Christ chassant les marchands du Temple",
+        "date": "vers 1610-1614",
+        "techniqueAndSize": "huile sur toile, 106 x 104 cm",
+        "collection": "Madrid, Église de San Gines",
+        "artist": "El Greco",
+        "legend": "",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/81/La_Purificacion_del_templo_version6_El_Greco.jpg",
+        "alt": "",
+        "licence": ""
+      }
+    ],
     "bible": {
       "text": "",
       "reference": ""
@@ -39,13 +80,19 @@
     "order": 3,
     "name": "Mardi Saint",
     "event": "Jésus visite ses amis à Béthanie",
-    "artwork": {
-      "title": "",
-      "artist": "",
-      "legend": "",
-      "href": "",
-      "licence": ""
-    },
+    "artwork": [
+      {
+        "title": "Le repas chez Simon le pharisien",
+        "date": "Entre 1618 et 1620",
+        "techniqueAndSize": "huile sur toile, 189 × 284,5 cm",
+        "collection": "Saint-Pétersbourg, Musée de l'Ermitage",
+        "artist": "Pierre Paul Rubens",
+        "legend": "",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Rubens-Feast_of_Simon_the_Pharisee.jpg",
+        "alt": "",
+        "licence": ""
+      }
+    ],
     "bible": {
       "text": "",
       "reference": ""
@@ -57,13 +104,19 @@
     "order": 4,
     "name": "Mercredi Saint",
     "event": "La trahison de Judas",
-    "artwork": {
-      "title": "",
-      "artist": "",
-      "legend": "",
-      "href": "",
-      "licence": ""
-    },
+    "artwork": [
+      {
+        "title": "La Trahison du Christ",
+        "date": "vers 1325-1328",
+        "techniqueAndSize": "Tempera à l’œuf sur bois de peuplier, 40,4 x 58,8 cm",
+        "collection": "Londres, The National Gallery",
+        "artist": "Ugolino di Nerio",
+        "legend": "",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/Ugolino_di_Nerio%2C_The_Betrayal_of_Christ.jpg",
+        "alt": "",
+        "licence": ""
+      }
+    ],
     "bible": {
       "text": "",
       "reference": ""
@@ -75,13 +128,19 @@
     "order": 5,
     "name": "Jeudi Saint",
     "event": "Le dernier repas de Jésus avec ses disciples",
-    "artwork": {
-      "title": "",
-      "artist": "",
-      "legend": "",
-      "href": "",
-      "licence": ""
-    },
+    "artwork": [
+      {
+        "title": "La Cène",
+        "date": "vers 1652",
+        "techniqueAndSize": "huile sur toile, 158 x 233 cm",
+        "collection": "Paris, Musée du Louvre",
+        "artist": "Philippe de Champagne",
+        "legend": "",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Philippe_de_Champaigne_-_The_Last_Supper_-_WGA4710.jpg",
+        "alt": "",
+        "licence": ""
+      }
+    ],
     "bible": {
       "text": "",
       "reference": ""
@@ -93,13 +152,30 @@
     "order": 6,
     "name": "Vendredi Saint",
     "event": "Condamnation et Crucifixion de Jésus",
-    "artwork": {
-      "title": "",
-      "artist": "",
-      "legend": "",
-      "href": "",
-      "licence": ""
-    },
+    "artwork": [
+      {
+        "title": "Ecce Homo",
+        "date": "1891",
+        "techniqueAndSize": "huile sur toile, 292 x 380 cm",
+        "collection": "Florence, Palazzo Pitti, Galleria dell'Arte Moderna",
+        "artist": "Antonio Ciseri",
+        "legend": "",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Ecce_homo_by_Antonio_Ciseri_%281%29.jpg",
+        "alt": "",
+        "licence": ""
+      },
+      {
+        "title": "La Crucifixion, dite Le Calvaire",
+        "date": "1457-1459",
+        "techniqueAndSize": "huile sur bois, 76 x 96 cm",
+        "collection": "Paris, Musée du Louvre",
+        "artist": "Andrea Mantegna",
+        "legend": "",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/Mantegna%2C_Andrea_-_crucifixion_-_Louvre_from_Predella_San_Zeno_Altarpiece_Verona.jpg",
+        "alt": "",
+        "licence": ""
+      }
+    ],
     "bible": {
       "text": "",
       "reference": ""
@@ -109,15 +185,21 @@
   },
   {
     "order": 7,
-    "name": "Saemdi Saint",
+    "name": "Samedi Saint",
     "event": "Jésus visite les limbes",
-    "artwork": {
-      "title": "",
-      "artist": "",
-      "legend": "",
-      "href": "",
-      "licence": ""
-    },
+    "artwork": [
+      {
+        "title": "La Descente du Christ aux limbes",
+        "date": "1597",
+        "techniqueAndSize": "huile sur cuivre,  26,5 x 35,5 cm",
+        "collection": "The Hague, Mauritshuis",
+        "artist": "Jan Brueghel l'Ancien et Hans Rottenhammer",
+        "legend": "",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Jan_Brueghel_%26_Hans_Rottenhammer_-_Christus_in_het_voorgeborchteFXD.jpg",
+        "alt": "",
+        "licence": ""
+      }
+    ],
     "bible": {
       "text": "",
       "reference": ""
@@ -129,13 +211,19 @@
     "order": 8,
     "name": "Pâques",
     "event": "Résurection de Jésus",
-    "artwork": {
-      "title": "",
-      "artist": "",
-      "legend": "",
-      "href": "",
-      "licence": ""
-    },
+    "artwork": [
+      {
+        "title": "La Résurrection du Christ et Femmes au tombeau",
+        "date": "entre 1439 et 1443",
+        "techniqueAndSize": "fresque, 192 x 167,5 cm",
+        "collection": "Florence, Museo nazionale di San Marco",
+        "artist": "Fra Angelico",
+        "legend": "",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Fra_Angelico_-_Resurrection_of_Christ_and_Women_at_the_Tomb_%28Cell_8%29_-_WGA00542.jpg",
+        "alt": "",
+        "licence": ""
+      }
+    ],
     "bible": {
       "text": "",
       "reference": ""

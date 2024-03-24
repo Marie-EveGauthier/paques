@@ -246,7 +246,6 @@ const EggWrapper = styled.div`
 `;
 
 const Card = ({ date, content }: { date: string; content: any }) => {
-  console.log("content::", content);
   return (
     <Wrapper>
       <EasterCard>

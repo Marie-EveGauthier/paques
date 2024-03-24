@@ -4,7 +4,7 @@ import { getCurrentYear } from "../utils/datesFinder";
 const Wrapper = styled.header`
   font-family: Caslon;
   font-size: var(--space-xl);
-  color: var(--color-green);
+  color: var(--color-green-dark);
   padding-top: 3rem;
   text-align: center;
 `;

@@ -5,11 +5,13 @@ import Header from "../components/Header";
 
 const Wrapper = styled.div`
   background-color: var(--color-green-light);
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 `;
 
 const Footer = styled.footer`
-  position: relative;
+  flex-shrink: 0;
+  margin: 1rem;
   padding: 64px;
   color: var(--color-green-dark);
 `;
@@ -27,5 +29,3 @@ export const Layout = () => {
     </Wrapper>
   );
 };
-
-// var(--color-dark-light)
