@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   margin-left: auto;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 `;
 
 type Props = {

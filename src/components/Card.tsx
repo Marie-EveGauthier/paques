@@ -50,7 +50,7 @@ const CardFront = styled.div`
   }
 `;
 
-const InsideText = styled.p`
+const InsideText = styled.div`
   display: none;
 
   ${EasterCard}:hover & {

@@ -6,8 +6,8 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import data from "../data.json";
 
 import EasterLink from "../components/EasterLink";
-// import Day1 from "../components/bible/day1";
-// import Day1Explained from "../components/bible/day1Explained";
+import Day1 from "../components/bible/day1";
+import Day1Explained from "../components/bible/day1Explained";
 
 const Wrapper = styled.div`
   display: flex;
@@ -77,7 +77,7 @@ const FigCaption = styled.figcaption`
   margin-bottom: 1rem;
 `;
 
-// const BibleWrapper = styled.div``;
+const BibleWrapper = styled.div``;
 const Explanation = styled.div``;
 
 const Error = styled.p`
@@ -87,24 +87,24 @@ const Error = styled.p`
   margin: 2rem;
 `;
 
-// const renderComponent = (name: string): JSX.Element => {
-//   const mapNameToComponent = {
-//     Day1: Day1,
-//     Day1Explained: Day1Explained,
-//     // Day2: Day2,
-//     // Day3: Day3,
-//     // Day4: Day4,
-//     // Day5: Day5,
-//     // Day6: Day6,
-//     // Day7: Day7,
-//     // Day8: Day8,
-//   };
+const renderComponent = (name: string): JSX.Element => {
+  const mapNameToComponent = {
+    Day1: Day1,
+    Day1Explained: Day1Explained,
+    // Day2: Day2,
+    // Day3: Day3,
+    // Day4: Day4,
+    // Day5: Day5,
+    // Day6: Day6,
+    // Day7: Day7,
+    // Day8: Day8,
+  };
 
-//   const Component = mapNameToComponent[name];
+  const Component = mapNameToComponent[name];
 
-//   if (!Component) return null;
-//   return <Component />;
-// };
+  if (!Component) return null;
+  return <Component />;
+};
 
 const Coco = () => {
   let { cocoId } = useParams();
@@ -144,9 +144,9 @@ const Coco = () => {
               ))}
             </ImagesWrapper>
           </PhotoProvider>
-          {/* <BibleWrapper>
+          <BibleWrapper>
             {renderComponent(currentData.bibleComponent)}
-          </BibleWrapper> */}
+          </BibleWrapper>
 
           <Explanation>
             Difficile à comprendre ?

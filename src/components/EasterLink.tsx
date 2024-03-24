@@ -17,7 +17,13 @@ const StyledLink = styled(Link)<{ fontSize?: string }>`
   margin: 5px;
 `;
 
-const EasterLink = ({ to, children, fontSize }) => {
+type EasterLinkProps = {
+  children?: React.ReactNode;
+  to: string;
+  fontSize?: string;
+};
+
+const EasterLink = ({ to, children, fontSize }: EasterLinkProps) => {
   return (
     <StyledLink to={to} fontSize={fontSize}>
       {children}
