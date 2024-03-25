@@ -7,7 +7,7 @@ import data from "../data.json";
 
 import EasterLink from "../components/EasterLink";
 import Day1 from "../components/bible/day1";
-import Day1Explained from "../components/bible/day1Explained";
+import Day1Explained from "../components/explanations/Day1Explained";
 
 const Wrapper = styled.div`
   display: flex;
@@ -78,7 +78,7 @@ const FigCaption = styled.figcaption`
 `;
 
 const BibleWrapper = styled.div``;
-const Explanation = styled.div``;
+const ExplanationWrapper = styled.div``;
 
 const Error = styled.p`
   color: var(--color-red);
@@ -92,12 +92,19 @@ const renderComponent = (name: string): JSX.Element => {
     Day1: Day1,
     Day1Explained: Day1Explained,
     // Day2: Day2,
+    // Day2Explained: Day2Explained,
     // Day3: Day3,
+    // Day3Explained: Day3Explained,
     // Day4: Day4,
+    // Day4Explained: Day4Explained,
     // Day5: Day5,
+    // Day5Explained: Day5Explained,
     // Day6: Day6,
+    // Day6Explained: Day6Explained,
     // Day7: Day7,
+    // Day7Explained: Day7Explained,
     // Day8: Day8,
+    // Day8Explained: Day8Explained,
   };
 
   const Component = mapNameToComponent[name];
@@ -144,18 +151,21 @@ const Coco = () => {
               ))}
             </ImagesWrapper>
           </PhotoProvider>
+          <ExplanationWrapper>
+            {renderComponent(currentData.explanation)}
+          </ExplanationWrapper>
           <BibleWrapper>
             {renderComponent(currentData.bibleComponent)}
           </BibleWrapper>
 
-          <Explanation>
+          {/* <Explanation>
             Difficile à comprendre ?
             <br />
             Selon moi, les textes de la Bible ressemblent souvent à des messages
             codés.
             <br />
             Reprenons donc, mais en déchiffrant les codes.
-          </Explanation>
+          </Explanation> */}
         </>
       ) : (
         <Error>Oups... Le lapin de Pâques n'est pas passé par ici</Error>

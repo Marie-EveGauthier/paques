@@ -16,6 +16,7 @@
       }
     ],
     "bibleComponent": "Day1",
+    "explanation": "Day1Explained",
     "question": "",
     "answer": ""
   },
@@ -69,10 +70,8 @@
         "licence": ""
       }
     ],
-    "bible": {
-      "text": "",
-      "reference": ""
-    },
+    "bibleComponent": "Day2",
+    "explanation": "Day2Explained",
     "question": "",
     "answer": ""
   },
@@ -93,10 +92,8 @@
         "licence": ""
       }
     ],
-    "bible": {
-      "text": "",
-      "reference": ""
-    },
+    "bibleComponent": "Day3",
+    "explanation": "Day3Explained",
     "question": "",
     "answer": ""
   },
@@ -117,10 +114,8 @@
         "licence": ""
       }
     ],
-    "bible": {
-      "text": "",
-      "reference": ""
-    },
+    "bibleComponent": "Day4",
+    "explanation": "Day4Explained",
     "question": "",
     "answer": ""
   },
@@ -141,10 +136,8 @@
         "licence": ""
       }
     ],
-    "bible": {
-      "text": "",
-      "reference": ""
-    },
+    "bibleComponent": "Day5",
+    "explanation": "Day5Explained",
     "question": "",
     "answer": ""
   },
@@ -176,10 +169,8 @@
         "licence": ""
       }
     ],
-    "bible": {
-      "text": "",
-      "reference": ""
-    },
+    "bibleComponent": "Day6",
+    "explanation": "Day6Explained",
     "question": "",
     "answer": ""
   },
@@ -200,10 +191,8 @@
         "licence": ""
       }
     ],
-    "bible": {
-      "text": "",
-      "reference": ""
-    },
+    "bibleComponent": "Day7",
+    "explanation": "Day7Explained",
     "question": "",
     "answer": ""
   },
@@ -224,10 +213,8 @@
         "licence": ""
       }
     ],
-    "bible": {
-      "text": "",
-      "reference": ""
-    },
+    "bibleComponent": "Day8",
+    "explanation": "Day8Explained",
     "question": "",
     "answer": ""
   }
